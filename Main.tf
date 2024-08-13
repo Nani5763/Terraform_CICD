@@ -1,11 +1,11 @@
 provider "aws" {
-    region = "ap-south-1"
+    region = "us-east-1"
   
 }
 resource "aws_instance" "pavan" {
-    ami = "ami-0a4408457f9a03be3"
-    instance_type = "t2.small"
-    key_name = "Ansible"
+    ami = "ami-0ae8f15ae66fe8cda"
+    instance_type = "t2.micro"
+    key_name = "Kubernetes"
     tags = {
       Name = "Pavan-dev"
     }
